@@ -1,0 +1,37 @@
+# Katalogi i pliki wygenerowane przez .NET
+bin/
+obj/
+*.user
+*.sln.docstates
+
+# Pliki konfiguracyjne IDE
+.vs/
+*.vscode/
+
+# Pliki bazy danych
+mysql/
+
+
+# Pliki konfiguracyjne aplikacji
+appsettings.Development.json
+appsettings.*.json
+
+# Pliki środowiskowe
+.env
+
+# Pliki cache i tymczasowe
+.cache/
+tmp/
+*.tmp
+
+# Katalogi dla testów
+test/
+tests/
+
+# Niezbędne pliki systemowe
+.DS_Store
+Thumbs.db
+
+
+# inne
+certs/

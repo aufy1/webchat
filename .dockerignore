@@ -1,0 +1,30 @@
+# Zignoruj pliki i katalogi z systemu build
+bin/
+obj/
+*.user
+*.sln
+
+
+# Zignoruj pliki konfiguracyjne IDE
+.vs/
+*.vscode/
+
+# Zignoruj pliki lokalne
+*.db
+*.sqlite
+*.log
+*.tmp
+*.bak
+
+# Zignoruj pliki i foldery do testów
+test/
+tests/
+*.Test.*.dll
+*.Test.dll
+
+# Zignoruj pliki konfiguracyjne aplikacji
+appsettings.Development.json
+
+# Zignoruj pliki cachu i pliki tymczasowe
+.cache/
+tmp/
