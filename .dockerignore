@@ -4,7 +4,6 @@ obj/
 *.user
 *.sln
 
-
 # Zignoruj pliki konfiguracyjne IDE
 .vs/
 *.vscode/
@@ -15,6 +14,8 @@ obj/
 *.log
 *.tmp
 *.bak
+
+mysql/ibtmp1
 
 # Zignoruj pliki i foldery do testów
 test/
