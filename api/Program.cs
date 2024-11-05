@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore; // Importuj Entity Framework Core
+using YourNamespace; // Upewnij się, że ta przestrzeń nazw jest poprawna
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +24,13 @@ builder.Services.AddCors(options =>
                           .AllowAnyMethod() // Pozwól na dowolne metody (GET, POST, itp.)
                           .AllowAnyHeader()); // Pozwól na dowolne nagłówki
 });
+
+// Konfiguracja bazy danych
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+
 
 var app = builder.Build();
 

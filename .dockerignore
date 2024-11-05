@@ -16,6 +16,8 @@ obj/
 *.bak
 
 mysql/ibtmp1
+mysql/aria_log*
+mysql/db
 
 # Zignoruj pliki i foldery do testów
 test/
