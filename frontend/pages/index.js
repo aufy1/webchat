@@ -10,7 +10,7 @@ export default function LoginForm() {
   const router = useRouter();
 
   const handleSubmit = async (e) => {
-    console.log("Sending login data:", { email, password });
+    console.log("Sending login data:", { email, password }); //debugging
 
     e.preventDefault();
     setError(null);

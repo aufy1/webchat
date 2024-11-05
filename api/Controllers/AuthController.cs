@@ -86,14 +86,12 @@ namespace YourNamespace.Controllers
             return Ok(new { message = "Logged out successfully" });
         }
 
-        [HttpGet("users")]
-        public async Task<IActionResult> GetUsers()
-        {
-            // Pobranie wszystkich użytkowników z bazy danych
-            var users = await _context.Users.ToListAsync();
-
-            return Ok(users); // Zwrócenie listy użytkowników
-        }
+        //[HttpGet("users")]
+        //public async Task<IActionResult> GetUsers()
+        //{
+        //   var users = await _context.Users.ToListAsync();
+        //    return Ok(users); // Zwrócenie listy użytkowników
+        //}
 
 
     }
