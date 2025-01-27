@@ -1,4 +1,4 @@
-Welcome to webchat project using **Docker**, **Next.js**, and **.NET**. This template provides a structured setup to help you get started quickly and efficiently.
+Welcome to webchat project using **Docker**, **Next.js**, and **.NET**. Project has been postponed - currently only partial functionality is working.
 
 1. **Clone repository**
 
